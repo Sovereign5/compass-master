@@ -90,22 +90,19 @@ class ResturantListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "resturantCell", for:indexPath) as! ResturantTableViewCell
         print(indexPath)
-        //let user = self.resturantArray[indexpath.row]["business"] as! CDYelpBusiness
-        //        let user = self.resturantArray[indexPath.row]["business"] as! CDYelpBusiness
-        //        let user = resturantArray[indexPath.row]
-        //
-        //
-        //        cell.nameLabel.text = user.name
-        //        cell.styleLabel.text = user.displayPhone
-        //        cell.pricingLabel.text = user.price
-        //        cell.ratingLabel.text = user.rating as? String
-        //
-        //
-        //        let imageURL = user.imageUrl
-        //        let data = try? Data(contentsOf: imageURL!)
-        //        if let imageData = data {
-        //            cell.imageURLView.image = UIImage(data:imageData)
-        //        }
+        let user = self.resturantArray[indexPath.row]
+        
+                cell.nameLabel.text = user.name
+                cell.styleLabel.text = user.displayPhone
+                cell.pricingLabel.text = user.price
+                //cell.ratingLabel.text = user.rating as? String
+        
+        
+                let imageURL = user.imageUrl
+                let data = try? Data(contentsOf: imageURL!)
+                if let imageData = data {
+                    cell.imageURLView.image = UIImage(data:imageData)
+                }
         
         return cell
     }
