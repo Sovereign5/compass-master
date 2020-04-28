@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreGraphics
 import CDYelpFusionKit
 import YelpAPI
 import BrightFutures
@@ -29,12 +30,6 @@ class ResturantListTableViewController: UITableViewController {
     }
     
     func prepareRestuarants() {
-        //DispatchQueue.global(qos: .background).async {
-//        let group = DispatchGroup()
-//        group.enter()
-        
-        //DispatchQueue.global(qos: .userInitiated).async {
-            //let appId = "Lex5mNMAJaJ432LpM3CtdA"
             let appSecret = "jA68XPwLGguQMoeEpcW2DMyw7tMB7MXXhmHcwqW_iRRIdMM3Nx_q-f7RjSMGaeDidFJfv7vNth1urlLXXsMPhNArpXmJNKz-yViahoE8MCmGV9sYTAheSzvqMNNmXnYx"
             
             // Search for 3 dinner restaurants
@@ -71,12 +66,6 @@ class ResturantListTableViewController: UITableViewController {
             do{
                 sleep(1)
             }
-//            //print(self.resturantArray.count)
-//            print(self.resturantArray.count)
-//            group.leave()
-        //} //Dispatch Queue
-//        group.wait()
-        //self.tableView.reloadData()
     }
     
     func loadResturants() {
@@ -93,15 +82,17 @@ class ResturantListTableViewController: UITableViewController {
         let user = self.resturantArray[indexPath.row]
         
                 cell.nameLabel.text = user.name
-                cell.styleLabel.text = user.displayPhone
+                cell.styleLabel.text = user.categories![0].title
                 cell.pricingLabel.text = user.price
-                //cell.ratingLabel.text = user.rating as? String
+                //cell.ratingLabel.text = String(format:"%f", user.rating!)
         
         
                 let imageURL = user.imageUrl
                 let data = try? Data(contentsOf: imageURL!)
+        
                 if let imageData = data {
-                    cell.imageURLView.image = UIImage(data:imageData)
+                    let newImage = resizeImage(image: UIImage(data:imageData)!, newWidth: 130)
+                    cell.imageURLView.image = newImage
                 }
         
         return cell
@@ -112,4 +103,17 @@ class ResturantListTableViewController: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
+    
+    func resizeImage(image: UIImage, newWidth: CGFloat) -> UIImage
+    {
+        let scale = newWidth / image.size.width; let newHeight = image.size.height * scale;
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight));
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight));
+        let newImage = UIGraphicsGetImageFromCurrentImageContext(); UIGraphicsEndImageContext();
+        
+        return newImage!
+        
+    }
+    
 }
