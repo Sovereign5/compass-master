@@ -21,6 +21,9 @@
 		0B3450D1241707CC008D3550 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B3450CF241707CC008D3550 /* LaunchScreen.storyboard */; };
 		0B3450DC241707CD008D3550 /* compassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3450DB241707CD008D3550 /* compassTests.swift */; };
 		0B3450E7241707CD008D3550 /* compassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3450E6241707CD008D3550 /* compassUITests.swift */; };
+		0BB0BC52246220B800741AF4 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0BC51246220B800741AF4 /* LocationViewController.swift */; };
+		0BB0BC542462214900741AF4 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0BC532462214900741AF4 /* LocationView.swift */; };
+		0BB0BC562462218F00741AF4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BB0BC552462218F00741AF4 /* BaseView.swift */; };
 		0BF2C846243D6C9E000F3C3F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2C845243D6C9E000F3C3F /* LoginViewController.swift */; };
 		0BF2C848243D6CC4000F3C3F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF2C847243D6CC4000F3C3F /* FeedViewController.swift */; };
 		47A7A88FF41D11FFF89AAB86 /* Pods_compassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C08DE569349710457C886E2 /* Pods_compassTests.framework */; };
@@ -66,6 +69,9 @@
 		0B3450E2241707CD008D3550 /* compassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = compassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B3450E6241707CD008D3550 /* compassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = compassUITests.swift; sourceTree = "<group>"; };
 		0B3450E8241707CD008D3550 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BB0BC51246220B800741AF4 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		0BB0BC532462214900741AF4 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		0BB0BC552462218F00741AF4 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		0BF2C845243D6C9E000F3C3F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0BF2C847243D6CC4000F3C3F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0FE44D7343A5353B21DFE6FC /* Pods-compass-compassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-compass-compassUITests.release.xcconfig"; path = "Target Support Files/Pods-compass-compassUITests/Pods-compass-compassUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +153,9 @@
 				0BF2C847243D6CC4000F3C3F /* FeedViewController.swift */,
 				09D2969C24470EEB00DD569F /* YelpAPICaller.swift */,
 				09184CE22450F852004B0747 /* Models.swift */,
+				0BB0BC51246220B800741AF4 /* LocationViewController.swift */,
+				0BB0BC532462214900741AF4 /* LocationView.swift */,
+				0BB0BC552462218F00741AF4 /* BaseView.swift */,
 			);
 			path = compass;
 			sourceTree = "<group>";
@@ -433,10 +442,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				09D2969F2447112800DD569F /* ResturantListTableViewController.swift in Sources */,
+				0BB0BC562462218F00741AF4 /* BaseView.swift in Sources */,
+				0BB0BC542462214900741AF4 /* LocationView.swift in Sources */,
 				0BF2C846243D6C9E000F3C3F /* LoginViewController.swift in Sources */,
 				0B3450C5241707C5008D3550 /* AppDelegate.swift in Sources */,
 				09184CE32450F852004B0747 /* Models.swift in Sources */,
 				099695DC245A21A30088D71E /* MapViewController.swift in Sources */,
+				0BB0BC52246220B800741AF4 /* LocationViewController.swift in Sources */,
 				0BF2C848243D6CC4000F3C3F /* FeedViewController.swift in Sources */,
 				0B3450C7241707C5008D3550 /* SceneDelegate.swift in Sources */,
 				09380CE324603F99009D85CF /* DetailViewController.swift in Sources */,
