@@ -15,12 +15,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-A8-dgY">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Compass" translatesAutoresizingMaskIntoConstraints="NO" id="Arr-A8-dgY">
+                                <rect key="frame" x="0.0" y="-34" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Arr-A8-dgY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Jb7-NV-1SF"/>
+                            <constraint firstItem="Arr-A8-dgY" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RuY-tv-hkQ"/>
+                            <constraint firstItem="Arr-A8-dgY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k7Y-iY-Zwi"/>
+                            <constraint firstItem="Arr-A8-dgY" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" constant="-78" id="wnH-8J-afy"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

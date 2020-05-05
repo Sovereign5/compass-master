@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09184CE32450F852004B0747 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09184CE22450F852004B0747 /* Models.swift */; };
+		09380CE324603F99009D85CF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09380CE224603F99009D85CF /* DetailViewController.swift */; };
+		099695DA245908B30088D71E /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 099695D9245908B30088D71E /* LoadingCell.xib */; };
+		099695DC245A21A30088D71E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 099695DB245A21A30088D71E /* MapViewController.swift */; };
 		09D2969D24470EEB00DD569F /* YelpAPICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2969C24470EEB00DD569F /* YelpAPICaller.swift */; };
 		09D2969F2447112800DD569F /* ResturantListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D2969E2447112800DD569F /* ResturantListTableViewController.swift */; };
 		09D296A12447114700DD569F /* ResturantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D296A02447114700DD569F /* ResturantTableViewCell.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		09184CE22450F852004B0747 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		09380CE224603F99009D85CF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		099695D9245908B30088D71E /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		099695DB245A21A30088D71E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		09D2969C24470EEB00DD569F /* YelpAPICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpAPICaller.swift; sourceTree = "<group>"; };
 		09D2969E2447112800DD569F /* ResturantListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantListTableViewController.swift; sourceTree = "<group>"; };
 		09D296A02447114700DD569F /* ResturantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResturantTableViewCell.swift; sourceTree = "<group>"; };
@@ -129,8 +135,11 @@
 				0B3450C4241707C5008D3550 /* AppDelegate.swift */,
 				0B3450C6241707C5008D3550 /* SceneDelegate.swift */,
 				0B3450CA241707C5008D3550 /* Main.storyboard */,
+				099695D9245908B30088D71E /* LoadingCell.xib */,
 				09D2969E2447112800DD569F /* ResturantListTableViewController.swift */,
+				09380CE224603F99009D85CF /* DetailViewController.swift */,
 				09D296A02447114700DD569F /* ResturantTableViewCell.swift */,
+				099695DB245A21A30088D71E /* MapViewController.swift */,
 				0B3450CD241707CC008D3550 /* Assets.xcassets */,
 				0B3450CF241707CC008D3550 /* LaunchScreen.storyboard */,
 				0B3450D2241707CC008D3550 /* Info.plist */,
@@ -294,6 +303,7 @@
 			files = (
 				0B3450D1241707CC008D3550 /* LaunchScreen.storyboard in Resources */,
 				0B3450CE241707CC008D3550 /* Assets.xcassets in Resources */,
+				099695DA245908B30088D71E /* LoadingCell.xib in Resources */,
 				0B3450CC241707C5008D3550 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,8 +436,10 @@
 				0BF2C846243D6C9E000F3C3F /* LoginViewController.swift in Sources */,
 				0B3450C5241707C5008D3550 /* AppDelegate.swift in Sources */,
 				09184CE32450F852004B0747 /* Models.swift in Sources */,
+				099695DC245A21A30088D71E /* MapViewController.swift in Sources */,
 				0BF2C848243D6CC4000F3C3F /* FeedViewController.swift in Sources */,
 				0B3450C7241707C5008D3550 /* SceneDelegate.swift in Sources */,
+				09380CE324603F99009D85CF /* DetailViewController.swift in Sources */,
 				09D296A12447114700DD569F /* ResturantTableViewCell.swift in Sources */,
 				09D2969D24470EEB00DD569F /* YelpAPICaller.swift in Sources */,
 			);
