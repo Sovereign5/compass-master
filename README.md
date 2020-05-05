@@ -4,6 +4,17 @@ Group Project - README Template
 
 # compass
 
+## Required Pod Files
+   pod "Parse"
+   pod "AlamofireImage"
+   pod 'AFNetworking'
+   pod 'BDBOAuth1Manager'
+   pod 'CDYelpFusionKit', '~> 1.5.1'
+   pod 'ObjectMapper'
+   pod 'AlamofireObjectMapper'
+   pod 'YelpAPI', '~> 2.0'
+   pod 'BrightFutures'
+
 ## Table of Contents
 1. [Overview](#Overview)
 1. [Product Spec](#Product-Spec)
