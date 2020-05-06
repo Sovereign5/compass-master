@@ -88,7 +88,7 @@ class ResturantListTableViewController: UITableViewController {
                 cell.nameLabel.text = user.name
                 cell.styleLabel.text = user.categories![0].title
                 cell.pricingLabel.text = user.price
-                //cell.ratingLabel.text = String(format:"%f", user.rating!)
+                cell.ratingLabel.text = String(user.rating!) + "/5.0"
         
         
                 let imageURL = user.imageUrl
